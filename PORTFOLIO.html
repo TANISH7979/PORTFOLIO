@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    
+}
+
+header {
+    background: linear-gradient(to right, #ff6a00, #ee0979);
+    color: white;
+    padding: 20px 0;
+    font-size: 25px;
+    text-align: center;
+    
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background: linear-gradient(to right, #eeff0066, #00c0fa61);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #ff00cc75;
+    margin-bottom: 30px;
+    font-family: serif;
+    font-size: xx-large;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+}
+
+.profile-image {
+    border-radius: 50%;
+    width: 35%; 
+    height: 35%; 
+    margin-right: 20px;
+    border: 3px solid #0033ff; 
+}
+
+
+.social-icons {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .fa {
+        padding: 15px;
+        font-size: 30px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 50%;
+        margin: 5px;
+        transition: transform 0.3s, opacity 0.3s;
+    }
+
+    .fa:hover {
+        transform: scale(1.1);/
+        opacity: 0.8; 
+    }
+
+   
+    .fa-instagram { background: #E1306C; color: white; }
+    .fa-linkedin { background: #0077B5; color: white; }
+    
+
+
+    .fa[title] {
+        position: relative;
+    }
+
+    .fa[title]:hover::after {
+        content: attr(title);
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #333;
+        color: white;
+        padding: 5px;
+        border-radius: 5px;
+        white-space: nowrap;
+        z-index: 10;
+        opacity: 0.8;
+        font-size: 12px;
+    }
+
+
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: linear-gradient(to right, #ff6a00, #ee0979);
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 20px;
+    
+}
+
+mo{
+    font-size: 27px;
+    
+}
+
+op{
+    height: 100px;
+    width: 100px;
+}
+
+.profil-container {
+    display: flex;
+    align-items: center;
+}
+
+.profil-image {
+
+    width: 30%; 
+    height: 30%; 
+    margin-right: 20px;
+    border: 3px solid #ff0000; 
+}
+
+.tu{
+    font-size: x-large;
+    text-align: center;
+    text-decoration:lightblue;
+}
+ba{
+    margin-left: 35%;
+}
+
+uo{
+    font-size: x-large;
+    text-decoration:underline double;
+    color: rgba(255, 170, 0, 0.892);
+}
+
+
+co{
+    font-size: 30px;
+    font-family:sans-serif;
+}
+
+sd{
+    margin-left: 30px;
+}
+
+
+.content-table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 600px;
+
+}
+
+.content-table thead tr{
+    background-color: #00796b;
+    color:#ffffff;
+    text-align: left;
+    font-weight: bold;
+
+}
+
+.content-table th,
+.content-table td{
+    padding: 12px 15px;
+
+}
+.content-table tbody tr{
+    border-bottom: 1px solid #333;
+}
+
+.content-table tbody tr:nth-of-type(even){
+    background-color: ;
+}
+
+.content-table tbody tr:last-of-type{
+    border-bottom: 2px solid #00796b;
+}
+
+lm{
+    font-size: 30px;
+
+}
+
+ml{
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#qualification">Qualification</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+                
+
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>ABOUT ME</h2>
+        <div class="profile-container">
+            <img src="TANISH .jpg" alt="Profile Picture" class="profile-image">
+            <p><h3><mo>Hello! I'm TANISH SHARMA a passionate web developer with a love for creating beautiful and functional websites. I enjoy learning new technologies and improving my skills.</mo></h3></p>
+        </div>
+    </section>
+
+    <section id="qualification">
+        <h2>QUALIFICATION</h2>
+        <div class="profile-container">
+            <table class="content-table">
+                <thead>
+                <tr>
+                    <th><lm>Standard</lm></th>
+                    <th><lm>Year</lm></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><ml>9th  (SAINIK SCHOOL KAPURTHALA)</ml></td>
+                    <td><ml>2020-2021</ml></td>
+                </tr>
+                <tr>
+                    <td><ml>10th  (SAINIK SCHOOL KAPURTHALA)</ml></td>
+                    <td><ml>2021-2022</ml></td>
+                </tr>
+                <tr>
+                    <td><ml>11th  (SAINIK SCHOOL KAPURTHALA)</ml></td>
+                    <td><ml>2022-2023</ml></td>
+                </tr>
+                <tr>
+                    <td><ml>12th  (SURATGARH PUBLIC SCHOOL)</ml></td>
+                    <td><ml>2023-2024</ml></td>
+                </tr>
+                <tr>
+                    <td><ml>B.Tech  (LOVELY PROFESSIONAL UNIVERSITY)</ml></td>
+
+                    <td><ml>2024-</ml></td>
+                </tr>
+                
+                </tbody>
+            </table>
+            
+           
+
+           
+    </section>
+
+
+    
+
+    <section id="skills">
+        <h2>SKILLS</h2>
+        <div class="profile-container">
+           <p><h3><co>
+            <ul type="square">
+            <li>QUICK THINKER</li><li>EXCELLENT BRAINSTORMER</li><li>CHAIRSMATIC</li><li>ENEREGRETIC</li><li>MOTIVATOR</li><li>LEADERSHIP QUALITIES</li>
+        </ul> 
+           </co></h3></p>
+           
+           
+        </div>
+    </section>
+
+
+
+    <section id="certifications">
+        <h2>CERTIFICATIONS</h2>
+        <div class="project">
+           <uo> <h3>CERTIFICATE 1</h3> </uo>
+            <ba><img src="POSITIVE ATTITUDE.png" alt="Profile Picture" class="profil-image"></ba><div class="tu">THIS A CERIFICATE  OF POSITIVE ATTITUDE</div>
+
+            
+        </div>
+        <div class="project">
+            <uo><h3>CERTIFICATE 2</h3></uo>
+            <ba><img src="HACKA THORONE.png" alt="Profile Picture" class="profil-image"></ba><div class="tu">THIS IS A CERTIFICATE OF HACK A THRONE</div>
+            
+    </section>
+
+    <section id="contact">
+        <h2>CONTACT ME</h2>
+        <p><h3><mo>If you'd like to get in touch, feel free to reach out via email <a href="mailto:tanishsharma31032006@gmail.com">CLICK HERE!!</a></mo></h3></p>
+        <div class="social-icons">
+        
+            <a href="https://www.instagram.com/tanish_sharma_7979?igsh=MTR6M2FwZjhuM2FvYw==" class="fa fa-instagram" title="Instagram"></a>
+            <a href="https://www.linkedin.com/in/tanish-sharma-8a658b320" class="fa fa-linkedin" title="LinkedIn"></a>
+            
+           
+        </div>
+        
+    </section>
+
+    <footer>
+        <p>&copy; 2023 My Portfolio. All Rights Reserved.</p>
+    </footer>
+    
+</body>
+</html>
